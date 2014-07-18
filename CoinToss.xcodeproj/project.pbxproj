@@ -13,6 +13,9 @@
 		3EED85BD1978FEE8007EEB62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EED85BC1978FEE8007EEB62 /* Images.xcassets */; };
 		3EED85D419790456007EEB62 /* coin-heads-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EED85D219790456007EEB62 /* coin-heads-medium.png */; };
 		3EED85D519790456007EEB62 /* coin-tails-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EED85D319790456007EEB62 /* coin-tails-medium.png */; };
+		3EED85D919797946007EEB62 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3EED85D619797946007EEB62 /* LICENSE */; };
+		3EED85DA19797946007EEB62 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3EED85D719797946007EEB62 /* README.md */; };
+		3EED85DB19797946007EEB62 /* Screenshot.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3EED85D819797946007EEB62 /* Screenshot.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		3EED85C21978FEE8007EEB62 /* CoinTossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinTossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EED85D219790456007EEB62 /* coin-heads-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin-heads-medium.png"; sourceTree = "<group>"; };
 		3EED85D319790456007EEB62 /* coin-tails-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin-tails-medium.png"; sourceTree = "<group>"; };
+		3EED85D619797946007EEB62 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3EED85D719797946007EEB62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3EED85D819797946007EEB62 /* Screenshot.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 		3EED85B21978FEE8007EEB62 /* CoinToss */ = {
 			isa = PBXGroup;
 			children = (
+				3EED85D619797946007EEB62 /* LICENSE */,
+				3EED85D719797946007EEB62 /* README.md */,
+				3EED85D819797946007EEB62 /* Screenshot.PNG */,
 				3EED85D219790456007EEB62 /* coin-heads-medium.png */,
 				3EED85D319790456007EEB62 /* coin-tails-medium.png */,
 				3EED85B51978FEE8007EEB62 /* AppDelegate.swift */,
@@ -175,9 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EED85BB1978FEE8007EEB62 /* Main.storyboard in Resources */,
+				3EED85DB19797946007EEB62 /* Screenshot.PNG in Resources */,
 				3EED85D519790456007EEB62 /* coin-tails-medium.png in Resources */,
 				3EED85BD1978FEE8007EEB62 /* Images.xcassets in Resources */,
 				3EED85D419790456007EEB62 /* coin-heads-medium.png in Resources */,
+				3EED85D919797946007EEB62 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EED85DA19797946007EEB62 /* README.md in Sources */,
 				3EED85B81978FEE8007EEB62 /* ViewController.swift in Sources */,
 				3EED85B61978FEE8007EEB62 /* AppDelegate.swift in Sources */,
 			);
