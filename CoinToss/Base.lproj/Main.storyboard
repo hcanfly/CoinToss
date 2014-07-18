@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoinToss" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkJ-i8-bJ0">
+                                <rect key="frame" x="247" y="405" width="51" height="31"/>
+                                <connections>
+                                    <action selector="quickTossButtonAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4ed-93-sB6"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quick Toss" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DZ-dQ-RVz">
+                                <rect key="frame" x="146" y="415" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkn-tA-Eo4">
+                                <rect key="frame" x="210" y="444" width="61" height="30"/>
+                                <state key="normal" title="Flip Coin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCoinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GxV-KK-LR1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUv-hY-dNs">
+                                <rect key="frame" x="199" y="308" width="82" height="82"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cUv-hY-dNs" secondAttribute="bottom" constant="90" id="D6O-kH-pcn"/>
+                            <constraint firstAttribute="centerX" secondItem="cUv-hY-dNs" secondAttribute="centerX" id="G0m-Uh-XoT"/>
+                            <constraint firstAttribute="centerX" secondItem="1DZ-dQ-RVz" secondAttribute="centerX" constant="49.5" id="IjP-ZL-z8N"/>
+                            <constraint firstAttribute="centerX" secondItem="fkJ-i8-bJ0" secondAttribute="centerX" constant="-31.5" id="NEf-s1-u8d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fkJ-i8-bJ0" secondAttribute="bottom" constant="44" id="Pcy-Zk-FTn"/>
+                            <constraint firstAttribute="centerX" secondItem="Qkn-tA-Eo4" secondAttribute="centerX" constant="-0.5" id="lij-D6-0L2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qkn-tA-Eo4" secondAttribute="bottom" constant="6" id="qvN-z8-anU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1DZ-dQ-RVz" secondAttribute="bottom" constant="44" id="rYT-48-KB3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinView" destination="cUv-hY-dNs" id="3ZS-cY-ae9"/>
+                        <outlet property="flipButton" destination="Qkn-tA-Eo4" id="Bn2-Xv-J7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="507"/>
+        </scene>
+    </scenes>
+</document>
