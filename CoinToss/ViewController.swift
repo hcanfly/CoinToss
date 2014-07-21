@@ -19,8 +19,8 @@ let kQUICK_ANIMATION: Double = 0.15
 
 class ViewController: UIViewController {
                             
-	@IBOutlet var coinView: UIView
-	@IBOutlet var flipButton: UIButton
+	@IBOutlet var coinView: UIView!
+	@IBOutlet var flipButton: UIButton!
 	
 	var repeatCount = 0
 	var animationDuration: Double = kQUICK_ANIMATION
