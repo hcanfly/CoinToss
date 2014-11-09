@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		var layer:CALayer = coinView.layer
-		layer.contents = UIImage(named: "coin-heads-medium.png").CGImage
+		layer.contents = UIImage(named: "coin-heads-medium.png")!.CGImage
 	}
 	
 	
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 
 		if ( repeatCount++ > maxReps ) {
 			
-			coinView.layer.contents = (arc4random() % 2 == 0) ? UIImage(named: "coin-tails-medium.png").CGImage : UIImage(named: "coin-heads-medium.png").CGImage
+			coinView.layer.contents = (Int(arc4random()) % 2 == 0) ? UIImage(named: "coin-tails-medium.png")!.CGImage : UIImage(named: "coin-heads-medium.png")!.CGImage
 			coinView.layer.transform = CATransform3DIdentity
 			flipButton.enabled = true
 			
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
 			}, completion: {
 				_ in
 				
-				self.coinView.layer.contents = UIImage(named: "coin-tails-medium.png").CGImage
+				self.coinView.layer.contents = UIImage(named: "coin-tails-medium.png")!.CGImage
 				UIView.animateWithDuration(self.animationDuration, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: {
 					
 					var rotation: CATransform3D = self.coinView.layer.transform;
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
 					}, completion: {
 						_ in
 						
-						self.coinView.layer.contents = UIImage(named: "coin-heads-medium.png").CGImage
+						self.coinView.layer.contents = UIImage(named: "coin-heads-medium.png")!.CGImage
 						self.doAnimation()
 					})
 			})
@@ -110,7 +110,7 @@ class ViewController: UIViewController {
 		
 		repeatCount = 0;
 		coinView.layer.removeAllAnimations()
-		self.coinView.layer.contents = UIImage(named: "coin-heads-medium.png").CGImage
+		self.coinView.layer.contents = UIImage(named: "coin-heads-medium.png")!.CGImage
 		doAnimation()
 	}
 
