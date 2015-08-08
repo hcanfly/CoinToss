@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0C7258C4-7967-4253-923A-A006E051A583</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoinToss</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>166C4747681911D9B87F7C7CE55346D84E65AEF5</key>
+		<string>https://github.com/hcanfly/CoinToss.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoinToss.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>166C4747681911D9B87F7C7CE55346D84E65AEF5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hcanfly/CoinToss.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>166C4747681911D9B87F7C7CE55346D84E65AEF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>166C4747681911D9B87F7C7CE55346D84E65AEF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoinToss</string>
+		</dict>
+	</array>
+</dict>
+</plist>

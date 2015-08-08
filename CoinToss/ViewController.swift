@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		var layer:CALayer = coinView.layer
+		let layer:CALayer = coinView.layer
 		layer.contents = UIImage(named: "coin-heads-medium.png")!.CGImage
 	}
 	
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
 	
 	@IBAction func flipCoinAction(sender: AnyObject) {
 		
-		let button = sender as UIButton
+		let button = sender as! UIButton
 		button.enabled = false
 		
 		repeatCount = 0;
