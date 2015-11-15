@@ -23,14 +23,14 @@ class ViewController: UIViewController {
 	@IBOutlet weak private var flipButton: UIButton!
 	
 	private var repeatCount = 0
-	private var animationDuration: Double = kQUICK_ANIMATION
+	private var animationDuration = kQUICK_ANIMATION
 	private var maxReps = kMAX_REPS_QUICK
 	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		let layer:CALayer = coinView.layer
+		let layer = coinView.layer
 		layer.contents = UIImage(named: "coin-heads-medium.png")!.CGImage
 	}
 	
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
 		
 		UIView.animateWithDuration(animationDuration, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: {
 			
-			var rotation: CATransform3D = CATransform3DIdentity
+			var rotation = CATransform3DIdentity
 			
 			rotation = CATransform3DRotate(rotation, 0.5 * CGFloat(M_PI), 1.0, 0.0, 0.0)
 			self.coinView.layer.transform = rotation
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
 				self.coinView.layer.contents = UIImage(named: "coin-tails-medium.png")!.CGImage
 				UIView.animateWithDuration(self.animationDuration, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: {
 					
-					var rotation: CATransform3D = self.coinView.layer.transform;
+					var rotation = self.coinView.layer.transform;
 					
 					rotation = CATransform3DRotate(rotation, 1.0 * CGFloat(M_PI), 1.0, 0.0, 0.0);
 					self.coinView.layer.transform = rotation;
@@ -94,12 +94,12 @@ class ViewController: UIViewController {
 
 	@IBAction func quickTossButtonAction(sender: AnyObject) {
 		
-		if animationDuration < 0.2 {
-			animationDuration = kSLOW_ANIMATION
-			maxReps = kMAX_REPS_SLOW
+		if self.animationDuration < 0.2 {
+			self.animationDuration = kSLOW_ANIMATION
+			self.maxReps = kMAX_REPS_SLOW
 		} else {
-			animationDuration = kQUICK_ANIMATION
-			maxReps = kMAX_REPS_QUICK
+			self.animationDuration = kQUICK_ANIMATION
+			self.maxReps = kMAX_REPS_QUICK
 		}
 	}
 	
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
 		let button = sender as! UIButton
 		button.enabled = false
 		
-		repeatCount = 0;
+		self.repeatCount = 0;
 		coinView.layer.removeAllAnimations()
 		self.coinView.layer.contents = UIImage(named: "coin-heads-medium.png")!.CGImage
 		doAnimation()
