@@ -17,7 +17,7 @@ let kQUICK_ANIMATION: Double = 0.15
 
 
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
                             
 	@IBOutlet weak private var coinView: UIView!
 	@IBOutlet weak private var flipButton: UIButton!
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 	
 	func doAnimation() {
 
-		if ( repeatCount++ > maxReps ) {
+		if ( repeatCount > maxReps ) {
 			
 			coinView.layer.contents = (Int(arc4random()) % 2 == 0) ? UIImage(named: "coin-tails-medium.png")!.CGImage : UIImage(named: "coin-heads-medium.png")!.CGImage
 			coinView.layer.transform = CATransform3DIdentity
@@ -45,6 +45,7 @@ class ViewController: UIViewController {
 			
 			return
 		}
+        repeatCount += 1
 			
 		if ( repeatCount == 1 ) {					// first time for this animation
 			let duration: Double = (animationDuration * Double((maxReps+1)))
