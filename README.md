@@ -5,14 +5,13 @@ CoinToss is an iOS app written in Swift that simulates a coin being tossed. Now 
 
 
 
-![Screenshot]
-(/Screenshot.PNG?raw=true)
+![screenshot](https://user-images.githubusercontent.com/5750647/27009309-66e179fe-4e3f-11e7-8a65-dd8916070c39.PNG)
 
 
 Instructions
 ------------
 
-You will need the Xcode 6 Developer Preview to build and run the project. Because of the universal storyboard it will probably only run on iOS 8.
+This should work with Xcode 6 and later.
 
 
 
