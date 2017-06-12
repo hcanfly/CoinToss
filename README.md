@@ -11,7 +11,7 @@ CoinToss is an iOS app written in Swift that simulates a coin being tossed. Now 
 Instructions
 ------------
 
-This should work with Xcode 6 and later.
+Updated for Xcode 9 and Swift 4. But really on requires iOS 8 (and probably less than that).
 
 
 
