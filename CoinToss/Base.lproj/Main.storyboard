@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,50 +18,53 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkJ-i8-bJ0">
-                                <rect key="frame" x="247" y="405" width="51" height="31"/>
+                                <rect key="frame" x="243" y="636" width="51" height="31"/>
                                 <connections>
-                                    <action selector="quickTossButtonAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4ed-93-sB6"/>
+                                    <action selector="handleQuickTossButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shu-xf-Ynf"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quick Toss" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DZ-dQ-RVz">
-                                <rect key="frame" x="146" y="415" width="89" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Toss" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DZ-dQ-RVz">
+                                <rect key="frame" x="151.33333333333337" y="641" width="83.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkn-tA-Eo4">
-                                <rect key="frame" x="210" y="444" width="61" height="30"/>
+                                <rect key="frame" x="177" y="686" width="60" height="30"/>
                                 <state key="normal" title="Flip Coin">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCoinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GxV-KK-LR1"/>
+                                    <action selector="doFlipCoin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKy-yK-Rqk"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUv-hY-dNs">
-                                <rect key="frame" x="199" y="308" width="82" height="82"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUv-hY-dNs">
+                                <rect key="frame" x="166" y="526" width="82" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="O2o-fW-mgC"/>
+                                    <constraint firstAttribute="width" constant="82" id="UOj-Qg-Azi"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cUv-hY-dNs" secondAttribute="bottom" constant="90" id="D6O-kH-pcn"/>
-                            <constraint firstAttribute="centerX" secondItem="cUv-hY-dNs" secondAttribute="centerX" id="G0m-Uh-XoT"/>
-                            <constraint firstAttribute="centerX" secondItem="1DZ-dQ-RVz" secondAttribute="centerX" constant="49.5" id="IjP-ZL-z8N"/>
-                            <constraint firstAttribute="centerX" secondItem="fkJ-i8-bJ0" secondAttribute="centerX" constant="-31.5" id="NEf-s1-u8d"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fkJ-i8-bJ0" secondAttribute="bottom" constant="44" id="Pcy-Zk-FTn"/>
-                            <constraint firstAttribute="centerX" secondItem="Qkn-tA-Eo4" secondAttribute="centerX" constant="-0.5" id="lij-D6-0L2"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qkn-tA-Eo4" secondAttribute="bottom" constant="6" id="qvN-z8-anU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1DZ-dQ-RVz" secondAttribute="bottom" constant="44" id="rYT-48-KB3"/>
+                            <constraint firstItem="fkJ-i8-bJ0" firstAttribute="leading" secondItem="1DZ-dQ-RVz" secondAttribute="trailing" constant="8" id="4Av-F5-fVA"/>
+                            <constraint firstItem="Qkn-tA-Eo4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8in-gd-kSW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qkn-tA-Eo4" secondAttribute="bottom" constant="20" id="Cre-Su-rTz"/>
+                            <constraint firstItem="Qkn-tA-Eo4" firstAttribute="top" secondItem="1DZ-dQ-RVz" secondAttribute="bottom" constant="24" id="GFy-cs-r4G"/>
+                            <constraint firstItem="fkJ-i8-bJ0" firstAttribute="centerY" secondItem="1DZ-dQ-RVz" secondAttribute="centerY" id="Jlx-fS-1Uq"/>
+                            <constraint firstItem="cUv-hY-dNs" firstAttribute="leading" secondItem="1DZ-dQ-RVz" secondAttribute="trailing" constant="-69.000000000000028" id="MqX-Qh-akl"/>
+                            <constraint firstItem="1DZ-dQ-RVz" firstAttribute="top" secondItem="cUv-hY-dNs" secondAttribute="bottom" constant="33" id="Rt6-NN-X1F"/>
+                            <constraint firstItem="Qkn-tA-Eo4" firstAttribute="leading" secondItem="1DZ-dQ-RVz" secondAttribute="trailing" constant="-58.000000000000028" id="hNx-PD-Ccf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coinView" destination="cUv-hY-dNs" id="3ZS-cY-ae9"/>
-                        <outlet property="flipButton" destination="Qkn-tA-Eo4" id="Bn2-Xv-J7Z"/>
+                        <outlet property="flipButton" destination="Qkn-tA-Eo4" id="KJR-zE-zvb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
