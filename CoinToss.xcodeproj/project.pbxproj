@@ -18,16 +18,6 @@
 		3EED85DB19797946007EEB62 /* Screenshot.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3EED85D819797946007EEB62 /* Screenshot.PNG */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3EED85C31978FEE8007EEB62 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3EED85A81978FEE8007EEB62 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3EED85AF1978FEE8007EEB62;
-			remoteInfo = CoinToss;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		3EED85B01978FEE8007EEB62 /* CoinToss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinToss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EED85B41978FEE8007EEB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,7 +25,6 @@
 		3EED85B71978FEE8007EEB62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EED85BA1978FEE8007EEB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EED85BC1978FEE8007EEB62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3EED85C21978FEE8007EEB62 /* CoinTossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinTossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EED85D219790456007EEB62 /* coin-heads-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin-heads-medium.png"; sourceTree = "<group>"; };
 		3EED85D319790456007EEB62 /* coin-tails-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin-tails-medium.png"; sourceTree = "<group>"; };
 		3EED85D619797946007EEB62 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -45,13 +34,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		3EED85AD1978FEE8007EEB62 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3EED85BF1978FEE8007EEB62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				3EED85B01978FEE8007EEB62 /* CoinToss.app */,
-				3EED85C21978FEE8007EEB62 /* CoinTossTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,24 +104,6 @@
 			productReference = 3EED85B01978FEE8007EEB62 /* CoinToss.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3EED85C11978FEE8007EEB62 /* CoinTossTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3EED85CF1978FEE8007EEB62 /* Build configuration list for PBXNativeTarget "CoinTossTests" */;
-			buildPhases = (
-				3EED85BE1978FEE8007EEB62 /* Sources */,
-				3EED85BF1978FEE8007EEB62 /* Frameworks */,
-				3EED85C01978FEE8007EEB62 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3EED85C41978FEE8007EEB62 /* PBXTargetDependency */,
-			);
-			name = CoinTossTests;
-			productName = CoinTossTests;
-			productReference = 3EED85C21978FEE8007EEB62 /* CoinTossTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,15 +111,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Gary.com;
 				TargetAttributes = {
 					3EED85AF1978FEE8007EEB62 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					3EED85C11978FEE8007EEB62 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 3EED85AF1978FEE8007EEB62;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -165,6 +125,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -174,7 +135,6 @@
 			projectRoot = "";
 			targets = (
 				3EED85AF1978FEE8007EEB62 /* CoinToss */,
-				3EED85C11978FEE8007EEB62 /* CoinTossTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,13 +153,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EED85C01978FEE8007EEB62 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,22 +166,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EED85BE1978FEE8007EEB62 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3EED85C41978FEE8007EEB62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3EED85AF1978FEE8007EEB62 /* CoinToss */;
-			targetProxy = 3EED85C31978FEE8007EEB62 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3EED85B91978FEE8007EEB62 /* Main.storyboard */ = {
@@ -246,6 +184,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -254,12 +193,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -300,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -308,12 +250,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -352,6 +296,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.garyhanson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -364,40 +309,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.garyhanson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		3EED85D01978FEE8007EEB62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoinToss.app/CoinToss";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoinTossTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		3EED85D11978FEE8007EEB62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoinToss.app/CoinToss";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoinTossTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -418,15 +330,6 @@
 			buildConfigurations = (
 				3EED85CD1978FEE8007EEB62 /* Debug */,
 				3EED85CE1978FEE8007EEB62 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3EED85CF1978FEE8007EEB62 /* Build configuration list for PBXNativeTarget "CoinTossTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3EED85D01978FEE8007EEB62 /* Debug */,
-				3EED85D11978FEE8007EEB62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

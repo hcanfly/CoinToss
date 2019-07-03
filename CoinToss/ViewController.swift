@@ -54,7 +54,7 @@ final class ViewController: UIViewController {
             let duration = animationDuration * Double((maxReps+1))
             
             let startFrame = coinView.frame
-            UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            UIView.animate(withDuration: duration, delay: 0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
                 var frame = self.coinView.frame
                 
                 frame.origin.y = 40.0
@@ -62,13 +62,13 @@ final class ViewController: UIViewController {
             }, completion: {
                 _ in
                 
-                UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions.beginFromCurrentState, animations: {
+                UIView.animate(withDuration: duration, delay: 0.0, options: UIView.AnimationOptions.beginFromCurrentState, animations: {
                     self.coinView.frame = startFrame
                 }, completion: nil)
             })
         }
         
-        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: {
+        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
             var rotation = CATransform3DIdentity
             
             rotation = CATransform3DRotate(rotation, 0.5 * CGFloat.pi, 1.0, 0.0, 0.0)
@@ -77,7 +77,7 @@ final class ViewController: UIViewController {
             _ in
             
             self.coinView.layer.contents = self.tailsImage
-            UIView.animate(withDuration: self.animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: {
+            UIView.animate(withDuration: self.animationDuration, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
                 
                 var rotation = self.coinView.layer.transform;
                 
